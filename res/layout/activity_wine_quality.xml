@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    tools:context="com.bigdata.wineassessment.WineQualityActivity" >
+
+    <TextView
+        android:id="@+id/volatileValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/volatileSeekbar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/volatileSeekbar"
+        android:ems="10"
+        android:text="1"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/sulphatesValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/citricSeekbar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sulphatesSeekbar"
+        android:ems="10"
+        android:text="1.5"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/citricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/citricSeekbar"
+        android:layout_toRightOf="@+id/textviewSulphates"
+        android:ems="10"
+        android:text="1"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/densityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/densitySeekbar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/densitySeekbar"
+        android:ems="10"
+        android:text="1"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/totalSo2Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalSo2Seekbar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/totalSo2Seekbar"
+        android:ems="10"
+        android:text="150"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <SeekBar
+        android:id="@+id/volatileSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textviewVolatile"
+        android:layout_toRightOf="@+id/textviewSulphates"
+        android:progress="50" />
+
+    <SeekBar
+        android:id="@+id/citricSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/citricValue"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textviewCitricAcid"
+        android:progress="50" />
+
+    <SeekBar
+        android:id="@+id/densitySeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/citricSeekbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textviewDensity"
+        android:progress="50" />
+
+    <SeekBar
+        android:id="@+id/totalSo2Seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/densitySeekbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textviewTotalSo2"
+        android:progress="50" />
+
+    <TextView
+        android:id="@+id/textviewDensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textviewCitricAcid"
+        android:layout_marginTop="14dp"
+        android:text="DENSITY"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textviewCitricAcid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textviewAlcohol"
+        android:layout_below="@+id/textviewSulphates"
+        android:layout_marginTop="15dp"
+        android:text="CITRIC ACID"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textviewTotalSo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textviewCitricAcid"
+        android:layout_below="@+id/densityValue"
+        android:text="TOTAL SO2"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textviewVolatile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textviewDensity"
+        android:layout_below="@+id/alcoholValue"
+        android:text="VOLATILE ACIDITY"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <SeekBar
+        android:id="@+id/sulphatesSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textviewSulphates"
+        android:layout_alignLeft="@+id/citricValue"
+        android:layout_alignParentRight="true"
+        android:progress="40" />
+
+    <TextView
+        android:id="@+id/textviewSulphates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textviewVolatile"
+        android:layout_marginTop="14dp"
+        android:text="SULPHATES"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/alcoholValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alcoholSeekbar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/alcoholSeekbar"
+        android:ems="10"
+        android:text="11.5"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textviewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+		android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+     	android:textStyle="bold"
+     
+        android:text="WINE QUALITY ASSESSMENT" />
+
+    <TextView
+        android:id="@+id/textviewAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alcoholValue"
+        android:layout_alignParentLeft="true"
+        android:text="ALCOHOL"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <SeekBar
+        android:id="@+id/alcoholSeekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textviewTitle"
+        android:layout_toRightOf="@+id/textviewSulphates"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/btnQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalSo2Value"
+        android:layout_below="@+id/textviewTotalSo2"
+        android:layout_marginLeft="28dp"
+        android:gravity="center_horizontal"
+        android:text="EVALUATE!"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
